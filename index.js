@@ -27,12 +27,26 @@ let currentAudio = null;
       document.addEventListener("keydown", event => {
         if(event.key.startsWith("a")){
           playAudio(`/audios/1.ogg`)
+          document.getElementById("1").style.backgroundColor = "hsl(0, 0%, 80%)";
+        }
+      });
+
+      document.addEventListener("keyup", event => {
+        if(event.key.startsWith("a")){
+          document.getElementById("1").style.backgroundColor = "#ffffff";
         }
       });
 
       document.addEventListener("keydown", event => {
         if(event.key.startsWith("s")){
           playAudio(`/audios/2.ogg`)
+          document.getElementById("2").style.backgroundColor = "hsl(0, 0%, 80%)";
+        }
+      });
+
+      document.addEventListener("keyup", event => {
+        if(event.key.startsWith("s")){
+          document.getElementById("2").style.backgroundColor = "#ffffff";
         }
       });
 
