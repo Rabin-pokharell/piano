@@ -1,12 +1,17 @@
 html {
     box-sizing: border-box;
   }
+
+  body{
+    background-color: antiquewhite;
+  }
   
   *, *::before, *::after {
     box-sizing: inherit;
   }
   
   #piano {
+    position: relative;
     background-color: #00471b;
     width: 992px;
     height: 290px;
@@ -46,9 +51,7 @@ html {
     height: 100px;
     border-radius: 0 0 3px 3px;
   }
-  
-  
-  
+
   @media (max-width: 768px) {
     #piano {
       width: 358px;
@@ -71,3 +74,6 @@ html {
       width: 633px;
     }
   }
+
+
+

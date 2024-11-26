@@ -17,7 +17,69 @@ let currentAudio = null;
     }
 
 
+
     for(let i= 0; i<21; i++){
-        document.getElementById(`${i+1}`).addEventListener('click', () => playAudio(`/audios/${i+1}.ogg`));
-    }
-    
+        document.getElementById(`${i+1}`).addEventListener('click', () => {
+            playAudio(`/audios/${i+1}.ogg`);   
+        } );
+        }
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("a")){
+          playAudio(`/audios/1.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("s")){
+          playAudio(`/audios/2.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("d")){
+          playAudio(`/audios/3.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("f")){
+          playAudio(`/audios/4.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("g")){
+          playAudio(`/audios/5.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("h")){
+          playAudio(`/audios/6.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("j")){
+          playAudio(`/audios/7.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("k")){
+          playAudio(`/audios/8.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith("l")){
+          playAudio(`/audios/9.ogg`)
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if(event.key.startsWith(";")){
+          playAudio(`/audios/10.ogg`)
+        }
+      });
